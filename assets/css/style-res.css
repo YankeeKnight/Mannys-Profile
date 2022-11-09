@@ -48,7 +48,7 @@ header nav ul {
 }
 
 header nav ul li {
-    display: inline-block;
+    display:flex;
     margin-left: 25px;
 }
 
@@ -153,5 +153,8 @@ footer img {
 }
 
 @media screen and (max-width: 768px) {
+    header nav ul li{
+        flex-direction: column;
+    }
 
 }

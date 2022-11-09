@@ -5,6 +5,12 @@
     margin: 0; 
  }
  
+ main{
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+ }
+
  body{
      background-color: aliceblue;
  }
@@ -58,8 +64,9 @@ p {
     height: 300px;
     width: 100%;
     margin-bottom: 10px;
-    background-image: url("../images/myHero.jpg");
-    background-size: cover;
+    background-image: url("../images/myHeroAlt.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
     background-position:left;
     position: relative;
     text-align: center;
@@ -71,10 +78,10 @@ p {
     position:absolute;
     bottom: 20px;
     right: 40px;
-    font-size: large;
+    font-size: 28pt;
     font-family: Arial, Helvetica, sans-serif;
     background: linear-gradient(to top, red, transparent);
-    margin-right: -2%;
+    margin-right: -2.4%;
     padding: 20px 50px 20px 20px;
     text-shadow: 0 0 5px white;
 }
@@ -83,6 +90,8 @@ p {
 .flex{
     display: flex;
     flex-wrap:wrap;
+    height: 850px;
+    width: 75%;
 }
 
 .workimg1{
@@ -101,7 +110,6 @@ p {
     margin-bottom: 20px;
     padding: 50px;
     height: 400px;
-    width:max-content;
     font-family:Arial, Helvetica, sans-serif;
     background-color: black;
     color: #ffffff;
@@ -126,9 +134,11 @@ p {
 }
 
 .mysectionswork img{
-    max-height: 250px;
+    max-height: 200px;
+    max-width: 400px;
     border: 2px white solid;
 }
+
 .mysectionscontact{
     margin-bottom: 20px;
     padding: 50px;
@@ -154,23 +164,38 @@ p {
 
 .gridname{
     margin-left: 0;
-    padding: 10px;
+    padding: 0px 10px 10px 10px;
     clear: both;
     float: left;
-    width: 25%;
-    height: 400px;
+    width: 20%;
+    height: 100%;
     font-family:Arial, Helvetica, sans-serif;
     background-color: aliceblue;
 }
 
-.griddetail{
-    margin-bottom: 32px;
-    color: white;
+.gridname h2{
+    margin-bottom: 10px;
+    padding-right: 20px;
+    font-size: 48pt;
+    font-weight:200;
+    text-align: right;
 }
 
-.griddetail h2{
-    margin-bottom: 10px;
-    text-align: center;
+.lineam{
+    border-right: 6px solid #e50914;
+    height: 400px;
+    margin-bottom: 20px;
+}
+
+.linewrk{
+    border-right: 6px solid #e50914;
+    height: 850px;
+    margin-bottom: 20px;
+}
+
+.linecon{
+    border-right: 6px solid #e50914;
+    height: 200px;
 }
 
 footer {
@@ -186,4 +211,12 @@ footer h2 {
 
 footer img {
     max-height: 100px;
+}
+
+@media  screen and (max-width: 992px) {
+    
+}
+
+@media screen and (max-width: 768px) {
+
 }

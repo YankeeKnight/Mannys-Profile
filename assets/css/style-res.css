@@ -1,0 +1,150 @@
+/* Universal styles */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0; 
+ }
+ 
+ main{
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+ }
+
+ body{
+     background-color: aliceblue;
+     text-align: center;
+ }
+
+ h3{
+    color: black;
+    float: right;
+ }
+ 
+ h4{
+    padding-right: 10px;
+    height: 50px;
+    margin-bottom: 5px;
+    text-decoration: underline;
+    text-decoration-color: #e50914;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
+
+ }
+
+ header{
+     padding: 30px;
+     height: 150px;
+     font-family: Arial, Helvetica, sans-serif;
+     background-color: black;
+     color: #e50914;
+ }
+ 
+ header h1{
+     display: inline-flex;
+     font-size: 48px;
+     color: white;
+     background: #e50914;
+     float:left;
+     margin-left: -2%;
+     padding: 20px 20px 20px 50px;
+     text-shadow: 0 0 20px black;
+ }
+ 
+ header nav{
+     padding-top: 15px;
+     margin-right: 20px;
+     float: right;
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 20px;
+ }
+ 
+ header nav ul {
+     list-style-type: none;
+ }
+ 
+ header nav ul li {
+     display: inline-block;
+     margin-left: 25px;
+ }
+
+ a {
+    color: #ffffff;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1;
+    text-align: center;
+}
+
+.resumebody{
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+    background-color: aliceblue;
+    color: black;
+}
+
+.resumebullets{
+    list-style-type:square;
+    text-align: left;
+    width: 575x;
+    margin-left: 30%;
+}
+
+.float-left{
+    float: left;
+    margin-right: 25px;
+}
+
+.float-right{
+    float: right;
+    margin-right: 250px;
+}
+
+/* Hero image styling */
+.hero {
+    height: 300px;
+    width: 100%;
+    margin-bottom: 10px;
+    background-image: url("../images/resume-hero.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:left;
+    position: relative;
+    text-align: center;
+    color: black;
+}
+
+embed{
+    width: 100%;
+    height: 1000px;
+    display:flex;
+    border: 4px #e50914 solid;
+    border-radius: 5px;
+}
+
+footer {
+    padding: 30px;
+    clear: both;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+footer h2 {
+    font-size: 20px;
+}
+
+footer img {
+    max-height: 100px;
+}
+
+@media  screen and (max-width: 992px) {
+    
+}
+
+@media screen and (max-width: 768px) {
+
+}

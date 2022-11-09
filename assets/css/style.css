@@ -15,6 +15,7 @@
      background-color: aliceblue;
  }
  
+ /* Header styling */
  header{
      padding: 30px;
      font-family: Arial, Helvetica, sans-serif;
@@ -49,6 +50,16 @@
      margin-left: 25px;
  }
 
+ /* Header hover behavior */
+ header nav ul li :hover{
+    background-color: white;
+    color: black;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-color: #e50914;
+    
+ }
+
  a {
     color: #ffffff;
     text-decoration: underline;
@@ -58,11 +69,6 @@
 p {
     font-size: 16px;
     line-height: 1;
-}
-
-.float-left{
-    float: left;
-    margin-right: 25px;
 }
 
 /* Hero image styling */
@@ -79,7 +85,7 @@ p {
     color: black;
 }
 
-/* Styling for over image text */
+/* Styling for over hero image text */
 .bottom-left{
     position:absolute;
     bottom: 20px;
@@ -90,6 +96,12 @@ p {
     margin-right: -2.4%;
     padding: 20px 50px 20px 20px;
     text-shadow: 0 0 19px white;
+}
+
+/* Float for headshot image */
+.float-left{
+    float: left;
+    margin-right: 25px;
 }
 
 /* Flex box for work section */
@@ -112,6 +124,7 @@ p {
     flex-basis: 50%;
 }
 
+/* About me section styling */
 .mysectionsaboutme{
     margin-bottom: 20px;
     padding: 50px;
@@ -129,6 +142,7 @@ p {
     box-shadow: 10px 10px 10px rgb(104, 22, 22);
 }
 
+/* Work section styling */
 .mysectionswork{
     margin-bottom: 20px;
     padding: 50px;
@@ -145,6 +159,7 @@ p {
     border: 2px white solid;
 }
 
+/* Contact section styling */
 .mysectionscontact{
     margin-bottom: 20px;
     padding: 50px;
@@ -163,6 +178,7 @@ p {
     font-size: 28px;
 }
 
+/* Styling for aside element that houses section headers that float to the right */
 .gridname{
     margin-left: 0;
     padding: 0px 10px 10px 10px;
@@ -182,6 +198,7 @@ p {
     text-align: right;
 }
 
+/* Lines in between section header and section horizontally */
 .lineam{
     border-right: 6px solid #e50914;
     height: 400px;
@@ -199,6 +216,17 @@ p {
     height: 200px;
 }
 
+ /* Back to top button styling */
+ .back{
+    float: right;
+}
+
+.back:hover{
+    background-color: black;
+    border-radius: 100%;
+}
+
+/* Footer styling */
 footer {
     padding: 30px;
     clear: both;
@@ -214,6 +242,7 @@ footer img {
     max-height: 100px;
 }
 
+/* Media Inquiry */
 @media  screen and (max-width: 992px) {
     
 }

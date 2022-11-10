@@ -234,8 +234,8 @@ p {
     height: 200px;
 }
 
- /* Back to top button styling */
- .back{
+/* Back to top button styling */
+.back{
     float: right;
 }
 
@@ -260,7 +260,7 @@ footer img {
     max-height: 100px;
 }
 
-/* Media Inquiry */
+/* Media Queries */
 @media  screen and (max-width: 992px) {
     
 }
@@ -269,4 +269,25 @@ footer img {
     header nav {
         flex-direction: column;
     }
+
+    .mysectionsaboutme{
+        height: 1100px;
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 10px;
+
+    }
+
+    .mysectionsaboutme img{
+        max-height: 200px;
+        float:none;
+    }
+
+    .mysectionswork{
+        margin-bottom: 20px;
+        padding: 10px;
+        height: 1100px;
+        width: 100%;
+    }
+
 }

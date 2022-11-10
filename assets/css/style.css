@@ -73,7 +73,7 @@ p {
 /* Hero image styling */
 .hero {
     height: 300px;
-    width: 100%;
+    max-width: 100%;
     margin-bottom: 10px;
     background-image: url("../images/myHeroAlt.jpg");
     background-size:cover;
@@ -115,12 +115,22 @@ p {
     flex: 2 1 auto;
     padding: 10px;
     flex-basis: 100%;
+    filter: brightness(50%);
+}
+
+.workimg1:hover{
+    filter:none;
 }
 
 .workimgs{
     flex: 1 1 0;
     padding: 10px;
     flex-basis: 50%;
+    filter: brightness(50%);
+}
+
+.workimgs:hover{
+    filter:none;
 }
 
 /* About me section styling */

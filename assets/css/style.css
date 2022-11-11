@@ -34,8 +34,9 @@
  }
  
  header h1{
-     display: inline-flex;
-     font-size: 48px;
+    display: inline-flex;
+    width: fit-content; 
+    font-size: 48px;
      color: white;
      background: var(--netflixred);
      margin-left: -2%;
@@ -44,7 +45,6 @@
  }
  
  header nav{
-     display:flex;
      padding-top: 15px;
      margin-right: 20px;
      float: right;
@@ -79,6 +79,7 @@
 p {
     font-size: 16px;
     line-height: 1;
+    text-align: justify;
 }
 
 /* Hero image styling */
@@ -145,7 +146,6 @@ p {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /*position: relative;*/
   }
 
   .hoverit {
@@ -291,13 +291,17 @@ p {
 /* Footer styling */
 footer {
     padding: 30px;
-    clear: both;
     font-family:Arial, Helvetica, sans-serif;
     text-align: center;
 }
 
-footer h2 {
+footer h3 {
     font-size: 20px;
+}
+
+footer p{
+    font-size: 18px;
+    text-align: center;
 }
 
 footer img {
@@ -310,8 +314,32 @@ footer img {
 }
 
 @media screen and (max-width: 768px) {
+    header{
+        padding: 0px;
+        height: 300px;
+        text-align: center;
+    }
+
+    header nav ul li {
+        display: block;
+        text-align: center;
+    }
+    .hero {
+        height: 200px;
+    }
+
+    .bottom-right{
+        text-align: center;
+        margin-right: 0;
+        padding: 20px 50px 20px 20px;
+    }
+
     .image-gallery {
-        --row-height: 200px;
+        --row-height: 125px;
+    }
+
+    .size {
+        width: 225px;
     }
 
     .image-gallery>*:nth-child(1) {
@@ -339,22 +367,81 @@ footer img {
         grid-row: 5 / span 1;
       }
 
+      .mysectionswork h2 {
+        font-size: 14pt;
+    }
 
-    header nav {
-        flex-direction: column;
+    .mysectionswork span {
+        font-size: 12pt;
+        font-weight: 200;
+    }
+
+    .overlay {
+        padding: 5px;
+        margin: 0;
+        height: 50px;
+        width:fit-content;
+        margin-top: -70px;
+        position: relative;
     }
 
     .mysectionsaboutme{
-        height: 1100px;
+        height: 1200px;
         width: 100%;
         margin-bottom: 20px;
-        padding: 10px;
+        padding: 20px;
 
     }
 
     .mysectionsaboutme img{
         max-height: 200px;
+        margin: 10px 60px 15px 60px; 
+    }
+
+    .mysectionscontact{
+        padding: 20px;
+    }
+
+    .contactList {
+        font-size: 18px;
+        margin-left: 0px;
+        display: block;
+        line-height: 2;
+    }
+
+    .float-left{
         float:none;
+        margin-right: 0px;
+    }
+
+    .gridname{
+        margin-left: 0;
+        padding: 0px 10px 0px 10px;
+        width: 19%;
+    }
+    
+    .gridname h2{
+        font-size: 16pt;
+        font-weight:500;
+        text-align: right;
+    }
+    
+    .lineam{
+        height: 1200px;
+        margin-bottom: 20px;
+    }
+    
+    .linewrk{
+        height: 792px;
+        margin-bottom: 20px;
+    }
+    
+    .linecon{
+        height: 200px;
+    }
+
+    .back{
+        float: none;
     }
 
 }

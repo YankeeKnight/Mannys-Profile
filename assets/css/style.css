@@ -148,12 +148,12 @@ p {
     /*position: relative;*/
   }
 
-  .image-gallery > a {
+  .hoverit {
     filter: brightness(50%);
-    border:#e50914 solid;
+    border:var(--netflixred) solid;
   }
 
-  .image-gallery > a:hover {
+  .hoverit:hover {
     filter: none;
   }
   
@@ -199,56 +199,18 @@ p {
     font-weight: 400;
 }
  
-/* Text overlay for work section 
+/* Text overlay for work section */
 .overlay {
-    position: absolute;
-    top: 400px;
-    left: 50px;
-    padding: 20px 40px 20px 20px;
+    padding: 10px 10px 20px 10px;
+    margin: 0;
     color: white;
-    background-color: var(--netflixred);
+    background-color:#e50914;
     text-shadow: 0 0 20px black;
+    height: 80px;
+    width:fit-content;
+    margin-top: -120px;
+    position: relative;
 }
-
-.overlay2 {
-    position: absolute;
-    top: 580px;
-    left: 50px;
-    padding: 20px 40px 20px 20px;
-    color: white;
-    background-color: var(--netflixred);
-    text-shadow: 0 0 20px black;
-}
-
-.overlay3 {
-    position: absolute;
-    top: 580px;
-    left: 608px;
-    padding: 20px 40px 20px 20px;
-    color: white;
-    background-color: var(--netflixred);
-    text-shadow: 0 0 20px black;
-}
-
-.overlay4 {
-    position: absolute;
-    top: 800px;
-    left: 50px;
-    padding: 20px 40px 20px 20px;
-    color: white;
-    background-color: var(--netflixred);
-    text-shadow: 0 0 20px black;
-}
-
-.overlay5 {
-    position: absolute;
-    top: 800px;
-    left: 608px;
-    padding: 20px 40px 20px 20px;
-    color: white;
-    background-color: var(--netflixred);
-    text-shadow: 0 0 20px black;
-}*/
 
 /* Contact section styling */
 .mysectionscontact{

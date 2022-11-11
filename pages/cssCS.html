@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/reset-cssCS.css" /> 
+    <link rel="stylesheet" href="../assets/css/style-cssCS.css" />
+    <title>CSS Cheatsheet</title>
+</head>
+<body>
+    
+    <header>
+        <h1>CSS Snippet Cheatsheet</h1>
+    </header>
+
+    <main>
+        <p class="mainps">Ever have trouble recalling the exact syntax for your favorite CSS code? Give it a permanent home and
+           add it to this page! Select  <br> any snippet below and it'll automatically select all of the code for you to copy.
+        </p>
+
+        <div class="some-page-wrapper">
+            <div class="row">
+                <div class="column">
+                    <div class="snippbox">
+                        <header>Flexbox Row</header>
+                        <p>Use these three properties to create a Flexbox row layout.</p>
+                        <pre> 
+                    .row {
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        }
+                        </pre>
+                    </div>
+                </div>
+            
+                    <div class="column">
+                    <div class="snippbox">
+                        <header>Flexbox Column</header>
+                        <p>Use this to create a Flexbox column layout.</p>
+                        <pre> 
+                    .column {
+                        display: flex;
+                        flex-direction: column;
+                        }
+                        </pre>
+                    </div>
+                </div>
+
+                    <div class="column">
+                    <div class="snippbox">
+                        <header>CSS Grid Layout</header>
+                        <p>Build a 12-column layout using CSS Grid.</p>
+                        <pre> 
+              .grid {
+                display: grid;
+                width: 100%;
+                grid-template-columns: repeat(12, 1fr);
+                }
+                        </pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <div class="snippbox">
+                        <header>Linear Gradients</header>
+                        <p>This will create a background linear gradient from top to bottom.</p>
+                        <pre> 
+                .linear-gradient-background {
+                    background-image: linear- 
+                    gradient(rgba(232, 102, 236, 0.3) 0%
+                    (rgba(232, 102, 236, 0.6) 100%);
+                    }
+                        </pre>
+                    </div>
+                    </div>
+
+                    <div class="column">
+                    <div class="snippbox">
+                        <header>Box Transition Glow</header>
+                        <p>This will create a background linear gradient from top to bottom.</p>
+                        <pre>
+                    .code-card .card-header{
+                        border-radius: 8px;
+                        transition: all 0.5s ease-in-
+                        out;
+                        }
+
+                    .code-card:hover,
+                    .code-card:hover .card-header {
+                        box-shadow:inset 0px 0px 8px
+                        rgba(232, 102, 236, 1), 0 0 15px
+                        rgba(233, 102, 236, 1);
+                        }
+                    </pre>
+                    </div>
+                    </div>
+
+                    <div class="column">
+                    <div class="snippbox">
+                        <header>Overlay Card with Title</header>
+                        <p>This will create a background linear gradient from top to bottom.</p>
+                        <pre> 
+                    .card-header{
+                        position: relative;
+                        margin-top: -20px;
+                        }
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer>
+        <h2>Made with CSS</h2>
+    </footer>
+</body>
+</html>

@@ -1,3 +1,8 @@
+/* Defined variables */
+:root{
+    --netflixred: #e50914;
+}
+
 /* Universal styles */
 *{
     box-sizing: border-box;
@@ -28,7 +33,7 @@ header h1{
     display: inline-flex;
     font-size: 48px;
     color: white;
-    background: #e50914;
+    background: var(--netflixred);
     float:left;
     margin-left: -2%;
     padding: 20px 20px 20px 50px;
@@ -57,7 +62,7 @@ header nav ul li :hover{
    color: black;
    text-decoration: underline;
    text-underline-offset: 5px;
-   text-decoration-color: #e50914;
+   text-decoration-color: var(--netflixred);
 }
 
 a {
@@ -86,7 +91,7 @@ p {
     padding: 5px;
     color:white;
     text-decoration: underline;
-    text-decoration-color: #e50914;
+    text-decoration-color: var(--netflixred);
     text-underline-offset: 5px;
     text-decoration-thickness: 2px;
  }
@@ -97,7 +102,7 @@ p {
     height: 50px;
     margin-bottom: 5px;
     text-decoration: underline;
-    text-decoration-color: #e50914;
+    text-decoration-color: var(--netflixred);
     text-decoration-thickness: 2px;
     text-underline-offset: 2px;
  }

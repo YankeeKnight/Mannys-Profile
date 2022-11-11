@@ -1,3 +1,8 @@
+/* Defined variables */
+:root{
+    --netflixred: #e50914;
+}
+
 /* Universal styles */
 *{
     box-sizing: border-box;
@@ -20,14 +25,14 @@
      padding: 30px;
      font-family: Arial, Helvetica, sans-serif;
      background-color: black;
-     color: #e50914;
+     color: var(--netflixred);
  }
  
  header h1{
      display: inline-flex;
      font-size: 48px;
      color: white;
-     background: #e50914;
+     background: var(--netflixred);
      margin-left: -2%;
      padding: 20px 20px 20px 50px;
      text-shadow: 0 0 20px black;
@@ -56,7 +61,7 @@
     color: black;
     text-decoration: underline;
     text-underline-offset: 5px;
-    text-decoration-color: #e50914; 
+    text-decoration-color: var(--netflixred); 
  }
 
  a {
@@ -91,7 +96,7 @@ p {
     right: 40px;
     font-size: 28pt;
     font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(to top, red, transparent);
+    background: linear-gradient(to top, var(--netflixred), transparent);
     margin-right: -2.4%;
     padding: 20px 50px 20px 20px;
     text-shadow: 0 0 19px white;
@@ -192,7 +197,7 @@ p {
     color: black;
     text-decoration: underline;
     text-underline-offset: 5px;
-    text-decoration-color: #e50914;
+    text-decoration-color: var(--netflixred);
     
  }
 
@@ -218,19 +223,19 @@ p {
 
 /* Lines in between section header and section horizontally */
 .lineam{
-    border-right: 6px solid #e50914;
+    border-right: 6px solid var(--netflixred);
     height: 400px;
     margin-bottom: 20px;
 }
 
 .linewrk{
-    border-right: 6px solid #e50914;
+    border-right: 6px solid var(--netflixred);
     height: 850px;
     margin-bottom: 20px;
 }
 
 .linecon{
-    border-right: 6px solid #e50914;
+    border-right: 6px solid var(--netflixred);
     height: 200px;
 }
 

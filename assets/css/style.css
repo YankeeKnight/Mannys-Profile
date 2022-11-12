@@ -8,21 +8,19 @@
 
 /* Universal styles */
 *{
-    /* box-sizing: border-box; */
     padding: 0;
     margin: 0; 
  }
  
  main{
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
+    width: 100%;
+    display: grid;
+    margin-left: 0px;
  }
 
  body{
-     background-color: aliceblue;
-     width: 100vw;
-     height: 100vh;
+    background-color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
  }
  
  /* Header styling */
@@ -37,11 +35,11 @@
     display: inline-flex;
     width: fit-content; 
     font-size: 48px;
-     color: white;
-     background: var(--netflixred);
-     margin-left: -2%;
-     padding: 20px 20px 20px 50px;
-     text-shadow: 0 0 20px black;
+    color: white;
+    background: var(--netflixred);
+    margin-left: -2%;
+    padding: 20px 20px 20px 50px;
+    text-shadow: 0 0 20px black;
  }
  
  header nav{
@@ -49,7 +47,7 @@
      margin-right: 20px;
      float: right;
      font-family: Arial, Helvetica, sans-serif;
-     font-size: 20px;
+     font-size: 30px;
  }
  
  header nav ul {
@@ -102,7 +100,6 @@ p {
     bottom: 20px;
     right: 40px;
     font-size: 28pt;
-    font-family: Arial, Helvetica, sans-serif;
     background: linear-gradient(to top, var(--netflixred), transparent);
     margin-right: -2.4%;
     padding: 20px 50px 20px 20px;
@@ -115,12 +112,17 @@ p {
     margin-right: 25px;
 }
 
+/* Columns and rows for each section */
+.grid{
+    display:grid;
+    grid-template-columns: 25% 75%;
+}
+
 /* About me section styling */
 .mysectionsaboutme{
     margin-bottom: 20px;
-    padding: 50px;
-    height: 400px;
-    font-family:Arial, Helvetica, sans-serif;
+    height: fit-content;
+    width: fit-content;
     background-color: black;
     color: #ffffff;
 }
@@ -131,6 +133,10 @@ p {
     border-style: solid;
     border-color: #ffffff;
     box-shadow: 10px 10px 10px rgb(104, 22, 22);
+}
+
+.mysecaboutmeinner {
+    padding: 50px;
 }
 
 /* Image grid for work section */
@@ -190,7 +196,6 @@ p {
 }
 
 .mysectionswork h2 {
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 16pt;
 }
 
@@ -199,25 +204,22 @@ p {
     font-weight: 400;
 }
  
-/* Text overlay for work section */
+/* Text overlay for work section images */
 .overlay {
-    padding: 10px 10px 20px 10px;
     margin: 0;
+    padding: 5px 10px 0px 5px;
+    height:fit-content;
+    width:fit-content;
+    margin-top: -80px;
+    position: relative;
     color: white;
     background-color:#e50914;
     text-shadow: 0 0 20px black;
-    height: 80px;
-    width:fit-content;
-    margin-top: -120px;
-    position: relative;
+    
 }
 
 /* Contact section styling */
 .mysectionscontact{
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 200px;
-    font-family:Arial, Helvetica, sans-serif;
     background-color: black;
     color: #ffffff;
     text-align: center;
@@ -226,6 +228,7 @@ p {
 .contactList {
     display: inline-block;
     margin-left: 25px;
+    padding: 50px 0px 50px 0px;
     text-decoration: underline;
     text-underline-offset: 5px;
     font-size: 28px;
@@ -240,98 +243,79 @@ p {
     
  }
 
-/* Styling for aside element that houses section headers that float to the right */
-.gridname{
-    margin-left: 0;
-    padding: 0px 10px 10px 10px;
-    clear: both;
-    float: left;
-    width: 20%;
-    height: 100%;
-    font-family:Arial, Helvetica, sans-serif;
+/* Lines in between section header and section horizontally */
+.lineHead{
     background-color: aliceblue;
+    border-right: 6px solid var(--netflixred);
 }
 
-.gridname h2{
-    margin-bottom: 10px;
+.lineHead h2 {
     padding-right: 20px;
     font-size: 48pt;
     font-weight:200;
     text-align: right;
-}
-
-/* Lines in between section header and section horizontally */
-.lineam{
-    border-right: 6px solid var(--netflixred);
-    height: 400px;
-    margin-bottom: 20px;
-}
-
-.linewrk{
-    border-right: 6px solid var(--netflixred);
-    height: 950px;
-    margin-bottom: 20px;
-}
-
-.linecon{
-    border-right: 6px solid var(--netflixred);
-    height: 200px;
+    color: black;
 }
 
 /* Back to top button styling */
 .back{
     float: right;
+    padding: 20px;
+}
+.back img {
+    max-height: 100px;
 }
 
 .back:hover{
     background-color: black;
-    border-radius: 100%;
+    border-radius: 50%;
 }
 
 /* Footer styling */
 footer {
     padding: 30px;
-    font-family:Arial, Helvetica, sans-serif;
-    text-align: center;
-}
-
-footer h3 {
-    font-size: 20px;
-}
-
-footer p{
-    font-size: 18px;
     text-align: center;
 }
 
 footer img {
     max-height: 100px;
+    background-color: transparent;
 }
 
 /* Media Queries */
 @media  screen and (max-width: 992px) {
-    
+     
 }
 
 @media screen and (max-width: 768px) {
     header{
         padding: 0px;
-        height: 300px;
+        height: 200px;
         text-align: center;
     }
 
-    header nav ul li {
-        display: block;
-        text-align: center;
+    header h1{
+        display:flexbox;
+        font-size: 36px;
+        margin-left: 0;
+        padding: 20px;
+     }
+
+     header nav{
+        float: none;
     }
+
+     header nav ul {
+        flex-direction: column;
+     }
     .hero {
         height: 200px;
     }
 
     .bottom-right{
-        text-align: center;
+        font-size: 14pt;
         margin-right: 0;
-        padding: 20px 50px 20px 20px;
+        padding: 20px 30px 20px 20px;
     }
 
     .image-gallery {
@@ -342,64 +326,52 @@ footer img {
         width: 225px;
     }
 
+    .idk{
+        display:block;
+        grid-template-columns: 25% 75%;
+    }
+
+    .lineHead{
+        border-right: none;
+        padding: 20px;
+    }
+    
+    .lineHead h2 {
+        font-size: 24pt;
+        text-align: center;
+        text-decoration: underline;
+        text-decoration-color: var(--netflixred);
+    }
+
     .image-gallery>*:nth-child(1) {
         grid-column: 1 / span 1;
         grid-row: 1 / span 1;
-      }
+    }
       
       .image-gallery>*:nth-child(2) {
         grid-column: 1 / span 1;
         grid-row: 2 / span 1;
-      }
+    }
       
       .image-gallery>*:nth-child(3) {
         grid-column: 1 / span 1;
         grid-row: 3 / span 1;
-      }
+    }
       
       .image-gallery>*:nth-child(4) {
         grid-column: 1 / span 1;
         grid-row: 4 / span 1;
-      }
+    }
     
       .image-gallery>*:nth-child(5) {
         grid-column: 1 / span 1;
         grid-row: 5 / span 1;
-      }
-
-      .mysectionswork h2 {
-        font-size: 14pt;
     }
 
-    .mysectionswork span {
-        font-size: 12pt;
-        font-weight: 200;
-    }
-
-    .overlay {
-        padding: 5px;
-        margin: 0;
-        height: 50px;
-        width:fit-content;
-        margin-top: -70px;
-        position: relative;
-    }
-
-    .mysectionsaboutme{
-        height: 1200px;
-        width: 100%;
-        margin-bottom: 20px;
-        padding: 20px;
-
-    }
 
     .mysectionsaboutme img{
         max-height: 200px;
         margin: 10px 60px 15px 60px; 
-    }
-
-    .mysectionscontact{
-        padding: 20px;
     }
 
     .contactList {
@@ -409,39 +381,12 @@ footer img {
         line-height: 2;
     }
 
-    .float-left{
-        float:none;
-        margin-right: 0px;
-    }
-
-    .gridname{
-        margin-left: 0;
-        padding: 0px 10px 0px 10px;
-        width: 19%;
-    }
-    
-    .gridname h2{
-        font-size: 16pt;
-        font-weight:500;
-        text-align: right;
-    }
-    
-    .lineam{
-        height: 1200px;
-        margin-bottom: 20px;
-    }
-    
-    .linewrk{
-        height: 792px;
-        margin-bottom: 20px;
-    }
-    
-    .linecon{
-        height: 200px;
-    }
-
     .back{
         float: none;
     }
+
+
+    
+    
 
 }

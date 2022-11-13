@@ -222,7 +222,7 @@ p {
     text-align: center;
 }
 
-.contactList {
+.contactList li {
     display: inline-block;
     margin-left: 25px;
     padding: 50px 0px 50px 0px;
@@ -231,7 +231,11 @@ p {
     font-size: 28px;
 }
 
-.contactList :hover{
+.contactList li a {
+    transition: all 0.3s ease 0s;
+ }
+
+.contactList li a:hover{
     background-color: white;
     color: black;
     text-decoration: underline;

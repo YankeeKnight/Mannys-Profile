@@ -295,11 +295,14 @@ footer img {
         justify-content:flex-start;
      }
 
-     .logo{
+     .name{
+        font-size: 44px;
         padding: 10px 20px 10px 20px;
+
      }
      .nav_links li {
         display: block;
+        white-space: nowrap;
         font-size: 18px;
         padding: 10px 20px;
      }
@@ -310,6 +313,7 @@ footer img {
 
     .bottom-right{
         font-size: 14pt;
+        color: white;
         margin-right: 0;
         padding: 20px 30px 20px 20px;
     }
@@ -336,6 +340,7 @@ footer img {
         font-size: 24pt;
         text-align: center;
         text-decoration: underline;
+        text-underline-offset: 6px;
         text-decoration-color: var(--netflixred);
     }
 

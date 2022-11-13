@@ -8,6 +8,7 @@
 
 /* Universal styles */
 *{
+    box-sizing: border-box;
     padding: 0;
     margin: 0; 
  }
@@ -24,45 +25,41 @@
  }
  
  /* Header styling */
- header{
-     padding: 30px;
-     font-family: Arial, Helvetica, sans-serif;
-     background-color: black;
-     color: var(--netflixred);
+ header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: black;
  }
- 
- header h1{
-    display: inline-flex;
-    width: fit-content; 
+
+ .name {
+    margin-right: auto;
     font-size: 48px;
     color: white;
     background: var(--netflixred);
-    margin-left: -2%;
+    margin-left: -15%;
     padding: 20px 20px 20px 50px;
     text-shadow: 0 0 20px black;
  }
- 
- header nav{
-     padding-top: 15px;
-     margin-right: 20px;
-     float: right;
-     font-family: Arial, Helvetica, sans-serif;
-     font-size: 30px;
- }
- 
- header nav ul {
-     list-style-type: none;
- }
- 
- header nav ul li {
-     display: inline-block;
-     margin-left: 25px;
+
+ .nav_links {
+    list-style: none;
  }
 
- /* Header hover behavior */
- header nav ul li :hover{
-    background-color: white;
+ .nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+    font-size: 20px;
+ }
+
+ .nav_links li a {
+    transition: all 0.3s ease 0s;
+ }
+
+ .nav_links li a:hover {
     color: black;
+    background-color: white;
     text-decoration: underline;
     text-underline-offset: 5px;
     text-decoration-color: var(--netflixred); 
@@ -259,14 +256,14 @@ p {
 
 /* Back to top button styling */
 .back{
-    float: right;
     padding: 20px;
+    text-align: center;
 }
 .back img {
     max-height: 100px;
 }
 
-.back:hover{
+.back img:hover{
     background-color: black;
     border-radius: 50%;
 }
@@ -284,30 +281,29 @@ footer img {
 
 /* Media Queries */
 @media  screen and (max-width: 992px) {
-     
+    .lineHead h2 {
+        font-size: 38pt;
+    } 
+    .nav_links li {
+        font-size: 18px;
+        padding: 30px;
+     }
 }
 
 @media screen and (max-width: 768px) {
-    header{
-        padding: 0px;
-        height: 200px;
-        text-align: center;
-    }
-
-    header h1{
-        display:flexbox;
-        font-size: 36px;
-        margin-left: 0;
-        padding: 20px;
+    header {
+        justify-content:flex-start;
      }
 
-     header nav{
-        float: none;
-    }
-
-     header nav ul {
-        flex-direction: column;
+     .logo{
+        padding: 10px 20px 10px 20px;
      }
+     .nav_links li {
+        display: block;
+        font-size: 18px;
+        padding: 10px 20px;
+     }
+
     .hero {
         height: 200px;
     }
@@ -326,7 +322,7 @@ footer img {
         width: 225px;
     }
 
-    .idk{
+    .grid{
         display:block;
         grid-template-columns: 25% 75%;
     }
@@ -343,6 +339,10 @@ footer img {
         text-decoration-color: var(--netflixred);
     }
 
+    .image-gallery {
+        margin-left: 30px;
+      }
+      
     .image-gallery>*:nth-child(1) {
         grid-column: 1 / span 1;
         grid-row: 1 / span 1;
@@ -378,12 +378,9 @@ footer img {
         font-size: 18px;
         margin-left: 0px;
         display: block;
-        line-height: 2;
+        
     }
 
-    .back{
-        float: none;
-    }
 
 
     

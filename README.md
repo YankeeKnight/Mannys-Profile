@@ -19,17 +19,15 @@ Github Pages: https://yankeeknight.github.io/challenge_11-17/
 
 3. “myHeroAlt.png” Pexels.com, https://www.pexels.com/photo/close-up-of-computer-keyboard-249203/
 
-4. "resume-hero.jpg" Pexels.com, https://www.pexels.com/photo/black-typewriter-machine-typing-on-white-printer-paper-1303835/ 
+4. "workImage-1.jpg" Pexels.com, https://www.pexels.com/photo/contemporary-computer-monitors-on-wooden-desk-4792733/
 
-5. "workImage-1.jpg" Pexels.com, https://www.pexels.com/photo/contemporary-computer-monitors-on-wooden-desk-4792733/
+5. "workImage-2.jpg" Pexels.com, https://www.pexels.com/photo/close-up-photo-of-codes-1089440/ 
 
-6. "workImage-2.jpg" Pexels.com, https://www.pexels.com/photo/close-up-photo-of-codes-1089440/ 
+6. "workImage-3.jpg" Pexels.com, https://www.pexels.com/photo/glow-in-the-dark-keyboard-14011035/
 
-7. "workImage-3.jpg" Pexels.com, https://www.pexels.com/photo/glow-in-the-dark-keyboard-14011035/
+7. "workImage-4.jpg" Pexels.com, https://www.pexels.com/photo/black-flat-screen-computer-monitor-4584830/ 
 
-8. "workImage-4.jpg" Pexels.com, https://www.pexels.com/photo/black-flat-screen-computer-monitor-4584830/ 
-
-9. "workImage-5.jpg" Pexels.com, https://www.pexels.com/photo/close-up-of-computer-keyboard-248515/
+8. "workImage-5.jpg" Pexels.com, https://www.pexels.com/photo/close-up-of-computer-keyboard-248515/
 
 
 

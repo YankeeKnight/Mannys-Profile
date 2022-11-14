@@ -261,7 +261,7 @@ p {
 /* Back to top button styling */
 .back{
     padding: 20px;
-    text-align: center;
+    text-align: right;
 }
 .back img {
     max-height: 100px;

@@ -12,7 +12,7 @@ My personal and professional portfolio with work examples and resume.
 
 Github Pages: https://yankeeknight.github.io/challenge_11-17/
 
-## Sources
+## Credits
 1. Rivera, Emmanuel. backtopstart.png
 
 2. Rivera, Emmanuel. LOGOBLK.png
@@ -31,7 +31,7 @@ Github Pages: https://yankeeknight.github.io/challenge_11-17/
 
 
 
-## Usage
+## Purpose/Usage
 
 Portfolio for a potential employer to view.
 

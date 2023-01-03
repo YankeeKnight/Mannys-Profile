@@ -167,6 +167,7 @@ footer h3 {
   align-items: center;
 }
 
+
 /* On <pre> click, select all contents so the code is highlighted */
 .code-card pre:active {
   user-select: all;

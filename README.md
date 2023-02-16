@@ -1,5 +1,5 @@
-# challenge_11-17
-Second homework assignment due 11_17
+# Professional Portfolio
+HTML, CSS
 
 ## Description
 
